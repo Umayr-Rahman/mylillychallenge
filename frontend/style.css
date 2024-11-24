@@ -30,3 +30,69 @@ body {
 }
 
 /* ---- Your custom styles below ---- */
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;}
+
+#medicines-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#medicines-list li {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner-image {
+    width: 100%; /* Makes the image span the full width of the page */
+    height: 200px; /* Maintains the aspect ratio */
+    display: block; /* Ensures no unwanted spacing below the image */
+    margin-bottom: 10px; /* Adds some spacing below the banner */
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px 20px; /* Padding for button size */
+    font-size: 14px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    width: 100%; /* Full width */
+    max-width: 250px; /* Limit max width */
+    margin-top: 15px; /* Margin from top */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#add-medicine-form input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Includes padding and border in width */
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+
+#add-medicine-form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}

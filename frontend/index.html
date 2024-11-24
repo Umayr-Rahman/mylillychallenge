@@ -8,13 +8,27 @@
 </head>
 <body>
     <div class="disclaimer" id="disclaimer">
-        Disclaimer: All medicine names and prices used in this application are fictional and do not represent any real medicine(s).
+        Disclaimer: All medicine names and prices used in this application are fictional and do not represent any real medicine.
     </div>
     <header>
+        <img src="banner.jpg" alt="Medicine Tracker Banner" id="banner-image">
         <h1>Medicine Tracker</h1>
     </header>
     <main>
+        <ul id="medicines-list">
+            <!-- Medicines will abe dynamically inserted here by script.js -->
+        </ul>
 
+        <form id="add-medicine-form">
+            <label for="medicine">Add a Medicine Here: <br></label>
+            <input type="text" id="medicine-name" placeholder="Medicine Name" required>
+            <input type="number" id="medicine-price" placeholder="Price" step="0.01" required>
+            <br>
+            <button type="submit">Add Medicine</button> <!-- This button will be styled -->
+        </form>
+        
+
+        
     </main>
     <script src="script.js"></script>
 </body>
